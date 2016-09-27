@@ -56,7 +56,7 @@ pub enum ucl_emitter {
 
 bitflags! {
 #[repr(C)]
-    flags ucl_parser_flags_t: c_int {
+    pub flags ucl_parser_flags_t: c_int {
         const UCL_PARSER_DEFAULT = 0x0,
         const UCL_PARSER_KEY_LOWERCASE = 0x1,
         const UCL_PARSER_ZEROCOPY = 0x2,
@@ -67,7 +67,7 @@ bitflags! {
 
 bitflags! {
 #[repr(C)]
-    flags ucl_string_flags_t : c_int {
+    pub flags ucl_string_flags_t : c_int {
         const UCL_STRING_RAW = 0x0,
         const UCL_STRING_ESCAPE = 0x1,
         const UCL_STRING_TRIM = 0x2,
@@ -86,7 +86,7 @@ bitflags! {
 
 bitflags! {
 #[repr(C)]
-    flags ucl_object_flags_t: c_int {
+    pub flags ucl_object_flags_t: c_int {
         const UCL_OBJECT_ALLOCATED_KEY = 0x1,
         const UCL_OBJECT_ALLOCATED_VALUE = 0x2,
         const UCL_OBJECT_NEED_KEY_ESCAPE = 0x4,
