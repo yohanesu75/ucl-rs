@@ -12,7 +12,7 @@ use object::{
 use std::path::Path;
 
 bitflags! {
-    flags Flags: i32 {
+    pub flags Flags: i32 {
         const DEFAULT            = 0x0,
         const LOWERCASE          = 0x1,
         const ZEROCOPY           = 0x2,
